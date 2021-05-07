@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+body {
+  background-color: #090b1a;
+  font-family: 'Lexend Deca', sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid: auto auto / 1fr 1fr;
+  padding: 15vh;
+  height: calc(100% - 15vh);
+}
+
+.left-side {
+  background-color: #1b1938;
+  padding: 8vh 10vh 8vh 8vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.5fr 1,2fr 0.5fr;
+      grid-template-rows: 0.5fr 1,2fr 0.5fr;
+  gap: 15px;
+  border-radius: 10px 0 0 10px;
+}
+
+.highlight {
+  color: #aa5cdb;
+}
+
+.desc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.stats-group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stats {
+  text-transform: uppercase;
+}
+
+.stats span {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.right-side {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(170, 92, 219, 0.5)), to(rgba(170, 92, 219, 0.5))), url("../images/image-header-desktop.jpg");
+  background-image: linear-gradient(rgba(170, 92, 219, 0.5), rgba(170, 92, 219, 0.5)), url("../images/image-header-desktop.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #aa5cdb;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 800px;
+    padding: 100px 10px;
+  }
+  .left-side {
+    padding: 5vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    -ms-grid-columns: (minmax(100%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    -ms-grid-rows: auto / span 2;
+        grid-template-rows: auto / span 2;
+    padding: 2vh;
+    text-align: center;
+  }
+  .left-side {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 5;
+    -ms-grid-rows: 0.5fr 0.5fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .right-side {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+    min-height: 300px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .stats-group {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
