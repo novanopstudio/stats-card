@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 github
-- Solution URL: [[Add solution URL here]]
-- Live Site URL: [[Add live site URL here]]
+- Solution URL: [Solution URL](https://github.com/novanopstudio/stats-card)]
+- Live Site URL: [[Live Site]](https://novanopstudio.github.io/stats-card/index.html)]
 
 ## My process
 
